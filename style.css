@@ -1,4 +1,3 @@
-/* --- 1. OPĆE POSTAVKE --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
@@ -8,7 +7,6 @@ body {
     background-color: #fcfcfc;
 }
 
-/* --- 2. CUSTOM NAVIGACIJA (Visoka, logo lijevo, linkovi desno) --- */
 .custom-navigacija {
     background-color: #121212;
     height: 90px;
@@ -61,12 +59,12 @@ body {
     text-decoration: none;
     font-weight: 500;
     padding: 10px 22px;
-    border-radius: 30px; /* Bubble oblik */
+    border-radius: 30px; 
     transition: all 0.3s ease;
     display: inline-block;
 }
 
-/* Plavi bubble na navigaciji */
+
 .nav-linkovi a:hover {
     background-color: #0d6efd;
     color: white;
@@ -78,7 +76,6 @@ body {
     color: #0d6efd !important;
 }
 
-/* --- 3. HERO SEKCIJA (O nama s opacity efektom) --- */
 .hero-sekcija {
     min-height: calc(100vh - 90px);
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('media/kancelarija.png');
@@ -94,7 +91,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* --- 4. KARTICE IGARA --- */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
@@ -111,14 +107,13 @@ body {
     object-fit: cover;
 }
 
-/* --- 5. TIMELINE S PLAVIM BUBBLE EFEKTOM --- */
+
 .timeline {
     position: relative;
     max-width: 800px;
     margin: 40px auto;
 }
 
-/* Vertikalna linija */
 .timeline::after {
     content: '';
     position: absolute;
@@ -153,21 +148,21 @@ body {
 .timeline-sadrzaj {
     padding: 25px 30px;
     background-color: white;
-    border-radius: 20px; /* Jače zaobljeno za bubble efekt */
+    border-radius: 20px;
     border: 1px solid #eee;
     transition: all 0.3s ease;
     position: relative;
 }
 
-/* HOVER EFEKT NA TIMELINE (Bubble efekt) */
+
 .timeline-item:hover .timeline-sadrzaj {
-    background-color: #0d6efd; /* Plava pozadina */
-    color: white; /* Bijeli tekst */
+    background-color: #0d6efd;
+    color: white; 
     transform: translateX(10px);
     box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
 }
 
-/* Mijenjamo boju badgea i linkova unutar timelinea na hoveru */
+
 .timeline-item:hover .badge {
     background-color: white !important;
     color: #0d6efd !important;
@@ -178,7 +173,7 @@ body {
     transform: scale(1.3);
 }
 
-/* --- 6. VIDEO I TIM --- */
+
 .border-video {
     border-radius: 15px;
     overflow: hidden;
@@ -192,11 +187,12 @@ body {
     border: 4px solid #0d6efd;
 }
 
-/* --- 7. RESPONZIVNOST --- */
+
 @media (max-width: 992px) {
-    .nav-linkovi { display: none; } /* Na mobitelu bi trebao hamburger iz Bootstrapa */
+    .nav-linkovi { display: none; }
     .hero-sekcija { text-align: center; padding: 60px 0; }
     .timeline::after { left: 15px; }
     .timeline-dot { left: 5px; }
     .timeline-item { padding-left: 35px; }
+
 }
